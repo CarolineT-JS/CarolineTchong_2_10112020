@@ -1,0 +1,346 @@
+/* Définition des polices personnalisés*/
+@font-face {
+font-family: 'Raleway';
+src: 'Font/Raleway-VariableFont_wght.ttf'; 
+font-weight: 150 980;
+font-stretch: 75% 100%;
+font-style: normal;
+}
+
+body {
+    font-family: 'Raleway';
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+/* HEADER UPPER */
+#top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+header #logo {
+    width: auto;
+    height: 100px;
+    margin-top: 2%;
+}
+#Menu {
+    width: 70%;
+    height: auto;
+}
+#Menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /*pointer-events: none;*/
+}
+#Menu li {
+    margin: 20px;
+    padding: 40px 20px;
+}
+#Menu ul a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: black;
+}
+#Menu a:visited{color: #3e8cf9;}
+#Menu li:hover {
+    border-top: 3px #3e8cf9 solid;
+    color: #3e8cf9;
+}
+header h1 {font-size: 1.2em;}
+header p {line-height: 0%;}
+
+#Menu ul #inscrire {
+    font-weight: 700;
+    color: #0065FC;
+}
+
+/* HEADER LOWER */
+    /* OU */
+
+header #Lieu{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 40px 0;
+}
+#Lieu #fondicone{
+    width: 55px;
+    height: 55px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#Lieu #fondicone img {
+    width: 50%;
+    margin-top: 25%;
+    
+}
+#Lieu .form-control{
+    font-size: 1em;
+    border: 2px #F2F2F2 solid;
+    padding-left: 20px;
+    font-weight: 700;
+}
+#Lieu .bouton{
+    font-size: 1em;
+    background-color: #0065FC;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+     /* FILTRES */
+
+#Filtres{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-wrap: nowrap;
+    align-items: center;
+}
+#Filtres p {
+    font-weight: 700;
+    margin-right: 10px;
+}
+.filtre{
+    margin: 0 20px;
+    padding: 0 15px;
+    border: 2px #ddd9d9 solid;
+    border-radius: 30px;;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filtre i{
+    color: #0065FC;
+    bottom: 10px;
+    position: relative;
+    bottom: -18px;
+    font-size: 1.1em;
+}
+.filtre .rond{
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    background-color: #DEEBFF;
+    position: relative;
+    left: -16px;
+}
+.filtre a{
+    color: black;
+    font-weight: 700;
+}
+.filtre:hover{
+    background-color: #DEEBFF;
+}
+#Info {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#info{
+    color: #0065FC;
+    font-size: 0.8em;
+    border: 2px #dddd solid;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+#Info i {
+    position: relative;
+    top: 5px;
+}
+#Info p {
+    padding-left: 10px;
+}
+
+/* MAIN */
+    /* SECTION 1 */
+        /* Article Hostingframe */
+#Hebergement {
+    display: flex;
+}
+#Hostingframe {
+    width: 70%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 20px;
+}
+#Hostingframe h2, #Hostingframe #plus{
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+#Hostingframe #locations{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#locations figure{
+    width: 300px;
+    height: 255px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    z-index: 2;
+    margin: 15px;
+}
+#Hostingframe img {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    height: 200px;
+    z-index: 1;
+    border-radius: 25px;
+}
+#locations figcaption{
+    height: auto;
+    z-index: 100;
+    position: relative;
+    top: -55px;
+    background-color: white;
+    line-height: 1.2%;
+    text-align: left;
+    padding-left: 10px;
+}
+#locations figcaption h3 {
+    padding-top: 20px;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+#locations p{
+    font-size: 0.8em;
+    padding-top: 5px;
+}
+#Hebergement .fas {
+    font-size: 0.7em;
+    color: #0065FC;
+}
+#Hebergement #vide{color: #dbdbdb}
+/*#locations #zooming1, #zooming2{
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    zoom: 200%;
+    left: -30px;
+    shrink : 50%
+}*/
+#Hostingframe #plus{
+    font-size: 1em;
+    font-weight: 700;
+}
+        /* Aside Hostingframe */
+#smallFrame {
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 15px;
+    
+}
+#smallTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: baseline;
+    padding: 0 20px;
+}
+#smallTop h2{
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+#smallTop .fas{
+    font-size: 1.2em;
+    color: black;
+}
+#smallFrame figure{
+    max-width: 500px;
+    max-height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 5px;
+    border-radius: 25px;
+}
+#smallFrame img{
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 25px;
+}
+#smallFrame figcaption{
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    left: -50px;
+    z-index: 10;
+    padding-left: 20px;
+}
+#smallFrame figcaption h3{
+    font-size: 0.8em;
+    font-weight: 800;
+}
+#smallFrame figcaption p{
+    font-size: 0.7em;
+}
+#smallFrame figcaption .fas{
+    padding-top: 40px;
+}
+figure {
+    box-shadow: 1px 2px 20px #c9c7c7;
+}
+
+/*---------- RESPONSIVE ------------*/
+
+@media all and (max-width: 770px)
+{
+    body {
+        width: 90%;
+    }
+    #Menu .deux {
+        font-size: 1.5em;
+        justify-content: space-between;
+        top: 15%;
+        margin-top: 100px;
+        padding-top: 30px;
+        left: 0;
+    }
+    #Menu .deux:hover {
+        border-top: none;
+        border-bottom: 3px #3e8cf9 solid;
+        color: #3e8cf9;
+    }
+    #Menu #inscrire {
+        position: absolute;
+        top: -3px;
+        color: red;
+    }
+    header h1 {
+        margin-top: 50px;
+    }
+}
