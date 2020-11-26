@@ -118,7 +118,7 @@ header #Lieu{
      /* FILTRES */
 
 #Filtres{
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -156,7 +156,7 @@ header #Lieu{
     align-content: center;
 }
 .filtre a{
-    font-size: 0.7em;
+    font-size: 0.75em;
     color: black;
     font-weight: 700;
     padding: 10px 20px 10px 5px;
@@ -196,13 +196,14 @@ header #Lieu{
         /* Article Hostingframe */
 #Hebergement {
     display: flex;
+    margin-bottom: 10px;
 }
 #Hostingframe {
     width: 70%;
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px 10px;*/
+    padding: 20px 20px;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -223,8 +224,8 @@ header #Lieu{
     width: 100%;
     height: auto;
     background-color: white;
-    border-radius: 20px;
-    border: 5px solid white;
+    border-radius: 15px;
+    border: 4px solid white;
     z-index: 2;
     margin: 17px 15px;
     overflow: hidden;
@@ -232,15 +233,15 @@ header #Lieu{
 #Hostingframe img {
     max-width: 300px;
     width: 100%;
-    height: 110px;
+    height: 120px;
     display: block;
     z-index: 1;
-    border-radius: 20px;
-    transform: scale(1.2);
-    transform-origin: 3px bottom right;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
 }
 #locations figcaption{
-    height: 70px;
+    height: 60px;
     z-index: 5;
     position: relative;
     background-color: white;
@@ -249,7 +250,7 @@ header #Lieu{
     padding-left: 10px;
 }
 #locations figcaption h3 {
-    padding-top: 15px;
+    padding-top: 5px;
     font-size: 0.65em;
     font-weight: 800;
 }
@@ -267,7 +268,7 @@ header #Lieu{
 }
         /* Aside Hostingframe */
 #smallFrame {
-    width: 30%;
+    width: 32%;
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -276,7 +277,7 @@ header #Lieu{
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 #smallTop {
     width: 100%;
@@ -296,20 +297,25 @@ header #Lieu{
     padding-right: 35px;
 }
 #smallFrame figure{
-    width: 80%;
-    max-height: 125px;
+    width: 100%;
+    height: auto;
+    max-width: 340px;
+    max-height: 130px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    border-radius: 20px;
-    border: 5px solid white;
+    border-radius: 15px;
+    border: 4px solid white;
+    overflow: hidden;
+    margin-top: 20px;
 }
 #smallFrame img{
-    max-height: 125px;
-    width: 150%;
-    height: auto;
+    max-height: 150px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 15px;
+    object-fit: cover;
 }
 #smallFrame figcaption{
     width: 470px;
@@ -322,8 +328,9 @@ header #Lieu{
     margin: 0;
 }
 #smallFrame figcaption h3 {
-    font-size: 0.6em;
+    font-size: 0.65em;
     font-weight: 800;
+    margin-bottom: 5px;
 }
 #smallFrame figcaption p{
     font-size: 0.6em;
@@ -341,19 +348,23 @@ figure{
 #Activites{
     width: auto;
     height: 100%;
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+}
+#Activites h2{
+    margin: 0;
 }
 #Activites article{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 #activitiesLeft, #activitiesRight{
     width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 #activitiesLeft figure, #activitiesRight figure{
     width: 100%;
@@ -366,10 +377,10 @@ figure{
 #activitiesLeft figure{
     margin-left: 0;
 }
-                /* port */
+                /* port & parc */
 #activitiesLeft #port, #activitiesRight #parc{
     width: 45%;
-    height: 400px;
+    height: 440px;
     overflow: hidden;
     border-radius: 20px;
     z-index: 1;
@@ -381,15 +392,17 @@ figure{
     z-index: 10;
     background-color: white;
     position: relative;
-    top: -90px;
+    top: -70px;
 }
 #activitiesLeft figcaption h3, #activitiesRight h3{
     font-size: 0.7em;
 }
 #port img, #parc img{
     width: auto;
-    height: 430px;
+    height: 450px;
     z-index: 1;
+    object-position: right bottom;
+    object-position: -170px -20px;
 }
             /* aside */
 #left1, #right1{
@@ -408,7 +421,7 @@ figure{
 #left1 #fort, #left1 #iles{
     width: 100%;
     height: auto;
-    max-height: 200px;
+    max-height: 230px;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 40px;
@@ -418,7 +431,8 @@ figure{
     width: 100%;
     height: auto;
     max-width: 300px;
-    max-height: 200px;
+    max-height: 220px;
+    object-fit: cover;
 }
 #fort figcaption{
     width: 100%;
@@ -427,33 +441,32 @@ figure{
     z-index: 10;
     background-color: white;
     position: relative;
-    top: -60px;
+    top: -50px;
 }
                 /* iles */
 #left1 #iles{
-    max-height: 160px;
+    max-height: 170px;
 }
 #left1 #iles img{
     width: 100%;
-    height: 120px;
+    height: 130px;
+    object-fit: cover;
+    object-position: 100% 10%;
 }
 #iles figcaption{
     position: relative;
     top: -20px;
-    padding: 5px 20px;
+    padding: 2px 20px;
     z-index: 10;
     background-color: white;
 }
-#iles figcaption h3{
-    position: relative;
-    top: -5px;
-}
+
         /* Aticle Activities right */
             /* Aside right */
 #right1 figure{
     width: 100%;
     height: 100%;
-    max-height: 180px;
+    max-height: 200px;
     max-width: 400px;
     overflow: hidden;
     border-radius: 20px;
@@ -463,14 +476,16 @@ figure{
     justify-content: center;
 }
 #right1 img{
-    width: auto;
-    height: 100%;
-    max-height: 250px;
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
+    object-position: center top;
+    object-position: 0px 55px;
 }
 #right1 figcaption{
     max-height: 50px;
     position: relative;
-    top: -65px;
+    top: -55px;
     padding: 3px 20px;
     z-index: 10;
     background-color: white;
@@ -479,22 +494,22 @@ figure{
 /* FOOTER */
 
 footer{
-    width: 75%;
+    width: 72%;
     height: 100%;
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px 10px;
     margin: 0 auto;
     margin-bottom: 30px;
+    text-align: justify;
 }
 .link{
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: left;
 }
 footer h4{
     font-size: 0.8em;
@@ -511,23 +526,27 @@ footer a{
 
 /*---------- RESPONSIVE ------------*/
 
-@media all and (max-width: 770px)
+@media all and (max-width: 768px)
 {
     body {
         width: 90%;
     }
+    body p{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    /* HEADER */
+    #Menu {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
     #Menu .deux {
         font-size: 1.5em;
-        justify-content: space-between;
-        top: 15%;
-        margin-top: 100px;
-        padding-top: 30px;
-        left: 0;
-    }
-    #Menu .deux:hover {
-        border-top: none;
-        border-bottom: 3px #3e8cf9 solid;
-        color: #3e8cf9;
+        position: relative;
+        right: 100px;
+        padding-top: 50px;
+        
     }
     #Menu #inscrire {
         position: absolute;
@@ -537,4 +556,24 @@ footer a{
     header h1 {
         margin-top: 50px;
     }
+    /* FILTRES */
+    /*#Filtres p:nth-of-type(1){
+        flex-wrap: nowrap;
+    }*/
+    #Filtres p{
+        display: block;
+    }
+    #Filtres{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+}
+    .filtre{
+        margin: 10px;
+    }
+    /* Section 1 */
+    /* Section 2 */
+    /* Footer */
+    
 }
