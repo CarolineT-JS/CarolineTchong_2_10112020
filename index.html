@@ -6,30 +6,31 @@
     <title>Reservia - Trouvez votre hébergement pour des vacances de rêve</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@750&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@450&display=swap" rel="stylesheet" />
+
   </head>
   <body>
-<!-- MAIN -->
-    <main>
 <!-- HEADER --> 
       <header>
-          <div id="top">
-              <img src="Img/logo/ReserviaLogo3x.png" alt="Logo Reservia" id="logo"/>
                         <!-- Nav MENU -->
-              <nav id="Menu">
-                  <ul>
-                    <li class="deux"><a href="#Hébergement">Hébergements</a></li>
-                    <li class="deux"><a href="#Activités">Activités</a></li>
-                    <li id="inscrire"><a href="#about">S'inscrire</a></li>
-                  </ul>
-              </nav>
-          </div>
+          <nav id="Menu">
+              <ul id="topleft">
+                <img src="Img/logo/ReserviaLogo3x.png" alt="Logo Reservia" id="logo"/>
+                <li id="heb"><a href="#Hébergement">Hébergements</a></li>
+              </ul>
+              <ul id="topright">
+                <li id="act"><a href="#Activités">Activités</a></li>
+                <li id="inscrire"><a href="#about">S'inscrire</a></li>
+              </ul>
+          </nav>
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
                         <!-- Nav OÙ -->
           <div id="Lieu">
             <div id="fondicone"><a href="#"><img src="Img/autres/Marqueur-48-noir.png" alt="Icone ici"/></a></div>
-            <input type="text" class="form-control input" name="name" placeholder="Ville, région..." autofocus/>
-            <a href="#"><input type="submit" class="bouton" name="submit" value="Rechercher"/></a>
+            <input type="text" class="form-control input" name="name" placeholder="Ville, région..."/>
+            <a href="#"><input type="submit" class="bouton" name="submit" value="Rechercher"/><i class="fas fa-search"></i></a>
           </div>
                         <!-- FILTRES -->
           <div id="Filtres">
@@ -52,11 +53,13 @@
                 </div>
           </div>
           <div id="Info">
-                <div id="info"><i class="fas fa-info"> </i></div>
+                <div id="info"><i class="fas fa-info"></i></div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
+          </div>
       </header>
       
+<!-- MAIN -->
+    <main>
     <!-- Section 1 -->
         <section id="Hebergement">
                         <!-- Article Hostingframe -->
@@ -161,7 +164,7 @@
                         <!-- Asides left -->
                 <aside id="left1">
                     <figure id="fort" >
-                        <a href="#"><img src="Img/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomègues dominant le calcaire et le ciel blanc." /></a>
+                        <a href="#"><img src="Img/activites/2_large/paul-hermann-QFTrLdQIRhI--unsplash.jpg" alt="Photo du Fort de Pomègues dominant le calcaire et le ciel blanc." /></a>
                         <figcaption>
                             <h3>Fort de Pomègues</h3>
                         </figcaption>
@@ -174,7 +177,7 @@
                     </figure>
                 </aside>
                 </div>
-                        <!-- Aticle Activities right -->
+                        <!-- Activities right -->
                 <div id="activitiesRight">
                     <figure id="parc">
                         <a href="#"><img src="Img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo des falaises donnant sur la mer au Parc National des Calanques." /></a>

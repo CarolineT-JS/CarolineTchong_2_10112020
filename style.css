@@ -11,33 +11,23 @@ body {
     width: 100%;
     font-family: 'Raleway';
     margin: 0 auto;
-}
-main{
-    width: 100%;
+    font-size: 16px;
     max-width: 1300px;
-    margin: 0 auto;
 }
 ul {list-style: none;}
 a {text-decoration: none;}
 
-/* HEADER UPPER */
-#top {
+/* HEADER */
+header{
     width: 100%;
-    height: 110px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin: 0 auto;
-
-}
-header #logo {
-    width: auto;
-    height: 45px;
-    margin-top: 3%;
-}
-#Menu {
-    width: 70%;
     height: auto;
+    margin: 0 45px;
+    }
+#Menu {   
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
 }
 #Menu ul {
     width: 100%;
@@ -45,7 +35,20 @@ header #logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    /*pointer-events: none;*/
+}
+#Menu #topleft{
+    width: 84.5%;
+    justify-content: space-between;
+    padding: 0;
+}
+header #logo {
+    width: auto;
+    height: 45px;
+    padding-top: 1%;
+}
+#Menu #topright{
+    width: 16.5%;
+    padding-right: 4%;
 }
 #Menu li {
     margin: 0 10px;
@@ -54,7 +57,6 @@ header #logo {
 
 }
 #Menu ul a {
-    font-size: 0.7em;
     text-decoration: none;
     color: black;
 }
@@ -63,9 +65,8 @@ header #logo {
     border-top: 3px #3e8cf9 solid;
     color: #3e8cf9;
 }
-header h1 {font-size: 0.9em;}
+header h1 {font-size: 1.3em;}
 header p {
-    font-size: 0.65em;
     line-height: 1%;
 }
 
@@ -75,8 +76,8 @@ header p {
 }
 #Menu ul #inscrire:visited, #Menu ul #inscrire:hover
 {color: #0065FC}
-/* HEADER LOWER */
-    /* OU */
+
+    /* NAV OÙ */
 
 header #Lieu{
     width: 100%;
@@ -95,18 +96,19 @@ header #Lieu{
     border-bottom-left-radius: 15px;
 }
 #Lieu #fondicone img {
-    width: 50%;
+    width: 45%;
     margin-top: 25%;
     }
 #Lieu .form-control{
     width: 200px;
-    font-size: 0.7em;
     border: 2px #F2F2F2 solid;
     padding-left: 20px;
     font-weight: 700;
+    font-size: 1em;
+
 }
 #Lieu .bouton{
-    font-size: 0.7em;
+    font-size: 17px;
     font-weight: 700;
     background-color: #0065FC;
     color: white;
@@ -114,6 +116,9 @@ header #Lieu{
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+#Lieu .fas{
+    display: none;
 }
      /* FILTRES */
 
@@ -125,7 +130,7 @@ header #Lieu{
     align-items: center;
 }
 #Filtres p {
-    font-size: 0.8em;
+    width: auto;
     font-weight: 700;
     margin-right: 20px;
 }
@@ -140,15 +145,14 @@ header #Lieu{
 }
 .filtre .fas{
     color: #0065FC;
-    font-size: 0.75em;
 }
 .filtre .rond{
     border-radius: 50%;
-    width: 50px;
-    height: 49px;
+    width: 45px;
+    height: 45px;
     background-color: #DEEBFF;
     position: relative;
-    left: -5px;
+    left: -6px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -156,50 +160,53 @@ header #Lieu{
     align-content: center;
 }
 .filtre a{
-    font-size: 0.75em;
     color: black;
     font-weight: 700;
-    padding: 10px 20px 10px 5px;
+    padding: 8px 15px 10px 5px;
 }
 .filtre:hover{
     background-color: #DEEBFF;
 }
 #Info {
+    width: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     margin: 30px 0;
-
+    justify-content: flex-start;
 }
 #info{
     color: #0065FC;
     border: 2px #dddd solid;
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    margin: 2px 0;
+    margin: 2px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #Info i {
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
-#Info p {
-    padding-left: 10px;
-    font-size: 0.65em;
-}
-
 /* MAIN */
-    /* SECTION 1 */
-        /* Article Hostingframe */
-#Hebergement {
+main{
+    width: 95%;
+    margin: 0 auto;
     display: flex;
-    margin-bottom: 10px;
+    flex-direction: column;
 }
+    /* SECTION 1 */
+#Hebergement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px 10px 15px;
+}
+        /* Article Hostingframe */
 #Hostingframe {
-    width: 70%;
+    width: 65%;
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -209,9 +216,9 @@ header #Lieu{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#Hostingframe h2, #Hostingframe #plus, #Activites h2{
+#Hostingframe h2, #Activites h2, #smallFrame #smallTop h2{
     margin-left: 20px;
-    font-size: 0.9em;
+    font-size: 20px;
 }
 #Hostingframe #locations{
     display: flex;
@@ -220,14 +227,14 @@ header #Lieu{
     justify-content: space-around;
 }
 #locations figure{
-    max-width: 230px;
+    max-width: 220px;
     width: 100%;
     height: auto;
     background-color: white;
     border-radius: 15px;
     border: 4px solid white;
     z-index: 2;
-    margin: 17px 15px;
+    margin: 15px 10px;
     overflow: hidden;
 }
 #Hostingframe img {
@@ -251,19 +258,19 @@ header #Lieu{
 }
 #locations figcaption h3 {
     padding-top: 5px;
-    font-size: 0.65em;
+    font-size: 0.9em;
     font-weight: 800;
 }
 #locations figcaption p{
-    font-size: 0.6em;
+    font-size: 0.8em;
     padding-top: 5px;
 }
 #Hebergement .fas, #smallFrame figcaption .fas {
-    font-size: 0.5em;
+    font-size: 0.7em;
     color: #0065FC;
 }
 #Hostingframe #plus{
-    font-size: 0.8em;
+    margin-left: 20px;
     font-weight: 700;
 }
         /* Aside Hostingframe */
@@ -297,7 +304,7 @@ header #Lieu{
     padding-right: 35px;
 }
 #smallFrame figure{
-    width: 100%;
+    width: 80%;
     height: auto;
     max-width: 340px;
     max-height: 130px;
@@ -314,42 +321,45 @@ header #Lieu{
     width: 100%;
     height: 100%;
     z-index: 1;
-    border-radius: 15px;
+    border-bottom-right-radius: none;
+    border-top-right-radius: none;
     object-fit: cover;
+    object-position: left;
 }
 #smallFrame figcaption{
     width: 470px;
     height: 130px;
     background-color: white;
     position: relative;
-    left: -20px;
+    right: 10px;
     z-index: 10;
     padding-left: 20px;
     margin: 0;
 }
 #smallFrame figcaption h3 {
-    font-size: 0.65em;
+    font-size: 0.9em;
     font-weight: 800;
     margin-bottom: 5px;
 }
 #smallFrame figcaption p{
-    font-size: 0.6em;
+    font-size: 0.8em;
     padding: 0;
     margin: 0;
 }
 #smallFrame figcaption .fas{
-    padding-top: 25px;
+    padding-top: 30px;
+    font-size: 0.7em;
 }
 figure{
-    box-shadow: 1px 2px 20px #c9c7c7;
+    box-shadow: 1px 2px 10px #c9c7c7;
 }
     /* SECTION 2 */
         /* Article Activities left */
 #Activites{
     width: auto;
     height: 100%;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin: 40px 0;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -384,6 +394,7 @@ figure{
     overflow: hidden;
     border-radius: 20px;
     z-index: 1;
+    display: flex;
 }
 #activitiesLeft #port figcaption, #activitiesRight #parc figcaption{
     width: 100%;
@@ -392,10 +403,10 @@ figure{
     z-index: 10;
     background-color: white;
     position: relative;
-    top: -70px;
+    bottom: 60px;
 }
 #activitiesLeft figcaption h3, #activitiesRight h3{
-    font-size: 0.7em;
+    font-size: 14px;
 }
 #port img, #parc img{
     width: auto;
@@ -441,7 +452,7 @@ figure{
     z-index: 10;
     background-color: white;
     position: relative;
-    top: -50px;
+    bottom: 40px;
 }
                 /* iles */
 #left1 #iles{
@@ -455,13 +466,13 @@ figure{
 }
 #iles figcaption{
     position: relative;
-    top: -20px;
+    bottom: 10px;
     padding: 2px 20px;
     z-index: 10;
     background-color: white;
 }
 
-        /* Aticle Activities right */
+        /* Activities right */
             /* Aside right */
 #right1 figure{
     width: 100%;
@@ -480,12 +491,12 @@ figure{
     height: 250px;
     object-fit: scale-down;
     object-position: center top;
-    object-position: 0px 55px;
+    object-position: 0px 50px;
 }
 #right1 figcaption{
     max-height: 50px;
     position: relative;
-    top: -55px;
+    bottom: 50px;
     padding: 3px 20px;
     z-index: 10;
     background-color: white;
@@ -494,25 +505,18 @@ figure{
 /* FOOTER */
 
 footer{
-    width: 72%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
     justify-content: flex-start;
-    padding: 20px 10px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: justify;
+    padding: 20px 20px;
 }
 .link{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 32%;
 }
 footer h4{
-    font-size: 0.8em;
     margin-left: 40px;
     margin-bottom: 0;
 }
@@ -521,59 +525,248 @@ footer ul{
 }
 footer a{
     color: black;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 /*---------- RESPONSIVE ------------*/
 
-@media all and (max-width: 768px)
+@media all and (max-width: 510px)
 {
     body {
-        width: 90%;
-    }
-    body p{
-    display: flex;
-    flex-wrap: wrap;
-    }
-    /* HEADER */
-    #Menu {
-        position: relative;
+        width: 100%;
+        max-width: 500px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+            }
+    /* HEADER */
+    
+    header{
+        width: 100%;
+        margin: 0 auto;
     }
-    #Menu .deux {
-        font-size: 1.5em;
-        position: relative;
-        right: 100px;
-        padding-top: 50px;
-        
+    #Menu{
+        align-items: center;
+        margin-top: 10px;
+        text-align: center;
+    }
+    #Menu #topleft{
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 13px;
+        border-bottom: 3px #3e8cf9 solid;
+    }
+    #topleft img{
+        width: 45%;
+        height: auto;
+        padding-left: 20px;
+    }
+    #Menu #topright{
+        width: 45%;
+        margin-top: 0;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        border-bottom: 3px #F2F2F2 solid;
+    }
+    #Menu li, #Menu li:hover{
+        border-top: none;
+        padding-bottom: 10px;
+    }
+    #Menu #topleft a, #Menu #topright a{
+        color: #3e8cf9;
+    }
+    #topright #act a{
+        color: black;
     }
     #Menu #inscrire {
-        position: absolute;
-        top: -3px;
-        color: red;
+        text-align: right;
     }
     header h1 {
-        margin-top: 50px;
+        margin-top: 20px;
+        font-size: 1.4em;
     }
-    /* FILTRES */
-    /*#Filtres p:nth-of-type(1){
-        flex-wrap: nowrap;
-    }*/
-    #Filtres p{
+    header h1, header p, #Lieu, #Filtres{
+        margin-left: 20px;
+    }
+    header p{
+        height: auto;
+        margin-bottom: 30px;
+        line-height: normal;
+    }
+    /* NAV OÙ */
+    #Lieu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #Lieu .form-control{
+        width: 63%;
+        border-right: none;
+    }
+    #Lieu .bouton{
+        display: none;
+    }
+    #Lieu :nth-child(3n){
+        width: 50px;
+        height: 50px;
+        background-color: #3e8cf9;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 10px;
+        margin-left: 10px;
+    }
+    #Lieu .fas{
         display: block;
-    }
+        color: white;
+        font-size: 1.2em;
+}
+    /* FILTRES */
     #Filtres{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-}
+    }
+    #Filtres p{
+        width: 100%;
+        display: block;
+        margin: 0 0 10px 10px;
+        font-size: 18px;
+    }
+    #Filtres :nth-child(4n){
+        margin-right: 90px;
+    }
     .filtre{
-        margin: 10px;
+        margin: 6px 8px;
+    }
+    .filtre .rond{
+        width: 50px;
+        height: 50px;
+    }
+    .filtre .fas {
+        font-size: 1.2em;
+    }
+            /* INFO */
+    header #Info{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin: 10px 0;
+    }
+    #Info #info{
+        width: 28px;
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    header #Info p{
+        font-size: 18px;
+        flex-wrap: wrap;
+        text-align: left;
     }
     /* Section 1 */
+    
+    #Hebergement{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+    #Hebergement h2, #smallFrame #smallTop h2, #Activites h2{
+        font-size: 1.4em;   
+    }
+    #smallFrame{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    #smallTop h2{
+        padding-left: 20px;
+    }
+    #smallTop .fas{
+        font-size: 20px;
+        padding-right: 45px;
+    }
+    #smallFrame figure{
+        max-width: 100%;
+    }
+    #smallFrame figcaption{
+        width: 160%;
+        height: auto;
+    }
+    #Hostingframe{
+        width: auto;
+        background-color: white;
+    }
+    #Hostingframe figure{
+        max-width: 100%;
+        height: 200px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #Hostingframe figure img{
+        max-width: 100%;
+        height: 131px; 
+        object-position: center top;
+        object-position: 50% 50%;
+    }
+    #Hostingframe figure figcaption{
+        height: 30px;
+    }
+    #Hostingframe figure figcaption h3, #smallFrame figure figcaption h3, #plus{
+        font-size: 17px;
+        padding-top: 0;
+    }
+    #Hostingframe figure figcaption p, #smallFrame figure figcaption p{
+        font-size: 14px;
+    }
     /* Section 2 */
+    main #Activites{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #Activites article{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #activitiesLeft, #activitiesRight{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #Activites article #activitiesLeft figure, #Activites article #activitiesRight figure, #left1, #right1, #activitiesLeft #port, #activitiesRight #parc, #Activites article #left1 #fort, #Activites article #left1 #iles, #right1 figure{
+        width: 100% !IMPORTANT;
+        height: 200px;
+        margin: 10px 0;
+    }
+    #Activites #activitiesLeft figure img{
+        width: 100% !IMPORTANT;
+        height: 170px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    
+    
+    
     /* Footer */
     
+    footer{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
 }
