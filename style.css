@@ -1,12 +1,4 @@
 /* Définition des polices personnalisés*/
-@font-face {
-font-family: 'Raleway';
-src: 'Font/Raleway-VariableFont_wght.ttf' format ('ttf');
-font-weight: 150 980;
-font-stretch: 70% 70%;
-font-style: normal;
-}
-
 body {
     width: 100%;
     font-family: 'Raleway';
@@ -63,11 +55,9 @@ header #logo {
 #Menu a:visited{color: #3e8cf9;}
 #Menu li:hover {
     border-top: 3px #3e8cf9 solid;
-    color: #3e8cf9;
 }
-header h1 {font-size: 1.3em;}
-header p {
-    line-height: 1%;
+#Menu a:hover{
+    color: #3e8cf9;
 }
 
 #Menu ul #inscrire {
@@ -76,6 +66,10 @@ header p {
 }
 #Menu ul #inscrire:visited, #Menu ul #inscrire:hover
 {color: #0065FC}
+header h1 {font-size: 1.3em;}
+header p {
+    line-height: 1%;
+}
 
     /* NAV OÙ */
 
@@ -210,7 +204,7 @@ main{
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px 20px;*/
+    padding: 20px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -240,7 +234,7 @@ main{
 #Hostingframe img {
     max-width: 300px;
     width: 100%;
-    height: 120px;
+    height: 105px;
     display: block;
     z-index: 1;
     border-top-left-radius: 15px;
@@ -248,7 +242,7 @@ main{
     object-fit: cover;
 }
 #locations figcaption{
-    height: 60px;
+    height: 50px;
     z-index: 5;
     position: relative;
     background-color: white;
@@ -257,7 +251,6 @@ main{
     padding-left: 10px;
 }
 #locations figcaption h3 {
-    padding-top: 5px;
     font-size: 0.9em;
     font-weight: 800;
 }
@@ -291,7 +284,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 #smallTop h2{
     margin-left: 35px;
@@ -299,7 +292,7 @@ main{
     padding-top: 10px;
 }
 #smallTop .fas{
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: black;
     padding-right: 35px;
 }
@@ -307,14 +300,13 @@ main{
     width: 80%;
     height: auto;
     max-width: 340px;
-    max-height: 130px;
-    background-color: white;
+    max-height: 120px;
     display: flex;
     flex-direction: row;
     border-radius: 15px;
     border: 4px solid white;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 #smallFrame img{
     max-height: 150px;
@@ -331,7 +323,6 @@ main{
     height: 130px;
     background-color: white;
     position: relative;
-    right: 10px;
     z-index: 10;
     padding-left: 20px;
     margin: 0;
@@ -375,21 +366,22 @@ figure{
     width: 50%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
 }
 #activitiesLeft figure, #activitiesRight figure{
     width: 100%;
-    margin: 30px;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 #activitiesLeft figure{
     margin-left: 0;
 }
                 /* port & parc */
 #activitiesLeft #port, #activitiesRight #parc{
-    width: 45%;
+    width: 50%;
     height: 440px;
     overflow: hidden;
     border-radius: 20px;
@@ -403,7 +395,7 @@ figure{
     z-index: 10;
     background-color: white;
     position: relative;
-    bottom: 60px;
+    bottom: 30px;
 }
 #activitiesLeft figcaption h3, #activitiesRight h3{
     font-size: 14px;
@@ -419,12 +411,12 @@ figure{
 #left1, #right1{
     flex-direction: column;
     z-index: 10;
-    width: 45%;
+    width: 50%;
+    margin-top: 0;
 }
 #left1 figure, #right1 figure{
-    max-width: 450px;
+    max-width: 550px;
     max-height: 100%;
-    margin: 30px 10px;
     overflow: hidden;
 }
 
@@ -432,7 +424,7 @@ figure{
 #left1 #fort, #left1 #iles{
     width: 100%;
     height: auto;
-    max-height: 230px;
+    max-height: 240px;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 40px;
@@ -440,10 +432,10 @@ figure{
 }
 #left1 #fort img{
     width: 100%;
-    height: auto;
-    max-width: 300px;
-    max-height: 220px;
+    height: 230px;
     object-fit: cover;
+    object-position: 100% 40%;
+
 }
 #fort figcaption{
     width: 100%;
@@ -452,21 +444,21 @@ figure{
     z-index: 10;
     background-color: white;
     position: relative;
-    bottom: 40px;
+    bottom: 25px;
 }
                 /* iles */
 #left1 #iles{
-    max-height: 170px;
+    max-height: 160px;
 }
 #left1 #iles img{
     width: 100%;
-    height: 130px;
+    height: 160px;
     object-fit: cover;
-    object-position: 100% 10%;
+    object-position: 100% -65%;
 }
 #iles figcaption{
     position: relative;
-    bottom: 10px;
+    bottom: 25px;
     padding: 2px 20px;
     z-index: 10;
     background-color: white;
@@ -474,17 +466,17 @@ figure{
 
         /* Activities right */
             /* Aside right */
+
 #right1 figure{
     width: 100%;
-    height: 100%;
     max-height: 200px;
-    max-width: 400px;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0;
 }
 #right1 img{
     width: 100%;
@@ -528,9 +520,9 @@ footer a{
     font-size: 0.8em;
 }
 
-/*---------- RESPONSIVE ------------*/
+     /*------------------ RESPONSIVE ------------------*/
 
-@media all and (max-width: 510px)
+@media all and (max-width: 500px)
 {
     body {
         width: 100%;
@@ -555,19 +547,18 @@ footer a{
         width: 50%;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 13px;
         border-bottom: 3px #3e8cf9 solid;
     }
     #topleft img{
-        width: 45%;
+        width: 50%;
         height: auto;
         padding-left: 20px;
     }
     #Menu #topright{
-        width: 45%;
+        width: 50%;
         margin-top: 0;
         flex-direction: column-reverse;
-        justify-content: flex-end;
+        justify-content: space-between;
         border-bottom: 3px #F2F2F2 solid;
     }
     #Menu li, #Menu li:hover{
@@ -582,6 +573,7 @@ footer a{
     }
     #Menu #inscrire {
         text-align: right;
+        padding-left: 35%;
     }
     header h1 {
         margin-top: 20px;
@@ -617,9 +609,6 @@ footer a{
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        right: 10px;
-        margin-left: 10px;
     }
     #Lieu .fas{
         display: block;
@@ -661,12 +650,12 @@ footer a{
         margin: 10px 0;
     }
     #Info #info{
-        width: 28px;
-        margin-left: 30px;
+        width: 30px;
+        margin-left: 10px;
         margin-right: 0px;
     }
     header #Info p{
-        font-size: 18px;
+        font-size: 16px;
         flex-wrap: wrap;
         text-align: left;
     }
@@ -678,13 +667,19 @@ footer a{
         margin: 0;
         padding: 0;
     }
+    #locations figure{
+        margin: 5px 0;
+    }
+    #Hebergement h2{
+        margin-left: 10px;
+    }
     #Hebergement h2, #smallFrame #smallTop h2, #Activites h2{
         font-size: 1.4em;   
     }
     #smallFrame{
         width: 100%;
+        max-width: 100%;
         margin: 0;
-        padding: 0;
         border-radius: 0;
     }
     #smallTop h2{
@@ -695,15 +690,22 @@ footer a{
         padding-right: 45px;
     }
     #smallFrame figure{
+        width: 90%;
+        height: 200px;
+        max-height: 150px;
         max-width: 100%;
     }
     #smallFrame figcaption{
         width: 160%;
         height: auto;
     }
+    #smallFrame figcaption .fas{
+        padding-top: 50px;
+    }
     #Hostingframe{
         width: auto;
         background-color: white;
+        padding: 0;
     }
     #Hostingframe figure{
         max-width: 100%;
@@ -716,7 +718,7 @@ footer a{
         max-width: 100%;
         height: 131px; 
         object-position: center top;
-        object-position: 50% 50%;
+        object-position: 50% 52%;
     }
     #Hostingframe figure figcaption{
         height: 30px;
@@ -728,45 +730,97 @@ footer a{
     #Hostingframe figure figcaption p, #smallFrame figure figcaption p{
         font-size: 14px;
     }
+    #Hostingframe #plus{
+        margin-left: 5px;
+    }
     /* Section 2 */
-    main #Activites{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    #Activites{
+        margin: 0 auto;
     }
     #Activites article{
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        position: relative;
+        margin: 20px 0;
     }
     #activitiesLeft, #activitiesRight{
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
-    #Activites article #activitiesLeft figure, #Activites article #activitiesRight figure, #left1, #right1, #activitiesLeft #port, #activitiesRight #parc, #Activites article #left1 #fort, #Activites article #left1 #iles, #right1 figure{
-        width: 100% !IMPORTANT;
-        height: 200px;
-        margin: 10px 0;
+    #left1, #right1{
+        width: 100%;
+        height: auto;
     }
-    #Activites #activitiesLeft figure img{
-        width: 100% !IMPORTANT;
-        height: 170px;
+    #Activites #port, #left1 #fort, #activitiesLeft #left1 #iles, #activitiesRight #parc, #Activites #activitiesRight #right1 figure{
+        width: 100%;
+        height: 250px;
+        max-width: 500px;
+        max-height: 250px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #activitiesLeft #port img, #activitiesLeft #left1 #fort img, #activitiesLeft #left1 #iles img, #activitiesRight #parc img, #activitiesRight #right1 figure img{
+        width: 100%;
+        max-width: 100%;
+        height: 210px;
         object-fit: cover;
         object-position: center;
     }
-    
-    
-    
-    
+    #activitiesLeft #port img{
+        object-position: 50% 15%;
+    }
+    #activitiesLeft #fort img{
+        object-position: 50% 15%;
+    }
+    #activitiesLeft figcaption h3, #activitiesRight figcaption h3{
+        font-size: 17px;
+    }
+    #activitiesLeft #left1 #iles img{
+        object-position: 100% 5%;
+    }
+    #activitiesLeft #port figcaption, #activitiesLeft #fort figcaption, #activitiesLeft #iles figcaption, #activitiesRight #parc figcaption{
+        bottom: 20px;
+        height: 40px;
+    }
+    #activitiesRight #parc img{
+        object-position: center bottom;
+        object-position:  50% 20%;
+    }
+    #activitiesRight #parc figcaption{
+        bottom: 25px;
+    }
+    #activitiesRight #right1 figure img{
+        object-position: 50% 7%;
+    }
+    #activitiesRight #right1 figure #Longchamp{
+        object-position: 50% 25%;
+    }
+    #activitiesRight #right1 figure figcaption{
+        bottom: 20px;
+    }
     /* Footer */
     
     footer{
+        width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 20px 0;
         flex-direction: column;
+    }
+    footer .link{
+        width: 100%;
+        height: auto;
+    }
+    footer .link h4{
+        font-size: 17px;
+    }
+    footer .link li{
+        margin: 15px 0;
+    }
+    footer .link a{
+        font-size: 1em;
     }
 }
