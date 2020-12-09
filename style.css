@@ -131,8 +131,10 @@ header #Lieu{
 
      /* INFO */
 
-#Info {margin: 30px 0;}
-
+#Info {
+    margin: 30px 0;
+    align-items: baseline;
+}
 #info{
     color: #0065FC;
     border: 2px #dddd solid;
@@ -360,7 +362,12 @@ footer ul{
     margin-top: 10px;
     padding-left: 40px;
 }
-footer a{font-size: 0.8em;}
+footer li{margin: 3px 0;}
+
+footer a{
+    font-size: 0.9em;
+    color: black;
+}
 
      /*------------ RESPONSIVE TABLET ------------*/
 
@@ -530,23 +537,6 @@ footer a{font-size: 0.8em;}
     }
     .filtre .fas {font-size: 1.2em;}
     
-            /* INFO */
-    
-    header #Info{
-        display: flex;
-        align-items: baseline;
-        margin: 10px;
-    }
-    #Info #info{
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 0px;
-    }
-    header #Info p{
-        font-size: 16px;
-        flex-wrap: wrap;
-        text-align: left;
-    }
     /* Section 1 */
     
     #Hebergement{
@@ -693,7 +683,7 @@ footer a{font-size: 0.8em;}
     }
     footer .link h4{font-size: 17px;}
     
-    footer .link li{margin: 15px 0;}
+    footer .link li{margin: 10px 0;}
     
     footer .link a{font-size: 1em;}
 }
