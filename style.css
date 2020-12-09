@@ -1,43 +1,59 @@
-/* Définition des polices personnalisés*/
 body {
     width: 100%;
+    height: auto;
     font-family: 'Raleway';
     margin: 0 auto;
     font-size: 16px;
     max-width: 1300px;
 }
-ul {list-style: none;}
+
+/* Concaténation */
+
+ul {list-style: none;
+    padding: 0;
+    margin: 0;
+}
 a {text-decoration: none;}
 
+figure{box-shadow: 1px 2px 10px #c9c7c7;}
+
+#Menu, #Menu ul, #Lieu, #fondicone, #Filtres, .filtre, .filtre .rond, #Info, #info, #Hebergement, #locations, #smallFrame, #smallTop, #smallFrame figure, #Activites article, #activitiesLeft, #activitiesRight, #activitiesLeft figure, #activitiesRight figure, footer {
+    display: flex;
+}
+header, #Hebergement, #Hostingframe img, #smallTop, #smallFrame img, #left1 #fort img, #left1 #iles img, #right1 img, footer {
+    width: 100%;
+}
+#Menu li:hover, #Menu a:hover, #Menu a:visited, #Menu #topright #inscrire a, .filtre .fas, #Hebergement .fas, #smallFrame figcaption .fas {
+    color: #3e8cf9;
+}
+.filtre .rond, #smallFrame figcaption, #activitiesLeft #port figcaption, #activitiesRight #parc figcaption, #fort figcaption, #iles figcaption, #right1 figcaption {
+    position: relative;
+}
+#Lieu #fondicone, .filtre .rond, #info {
+    justify-content: center;
+    align-items: center;
+}
+#Hostingframe img, #smallFrame img, #left1 #fort img, #left1 #iles img {
+    object-fit: cover;
+}
+#Menu #topright #inscrire a, #Lieu .form-control, #Filtres p, #Lieu .bouton, .filtre a, #Hostingframe #plus{
+    font-weight: 700;
+}
+
 /* HEADER */
-header{
-    width: 100%;
-    height: auto;
-    margin: 0 45px;
-    }
-#Menu {   
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
-#Menu ul {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
+
+header{padding-left: 20px;}
+
+    /* MENU */
+
 #Menu #topleft{
-    width: 84.5%;
+    width: 82%;
     justify-content: space-between;
-    padding: 0;
 }
 header #logo {
-    width: auto;
     height: 45px;
     padding-top: 1%;
-}
+} 
 #Menu #topright{
     width: 16.5%;
     padding-right: 4%;
@@ -46,40 +62,22 @@ header #logo {
     margin: 0 10px;
     padding: 30px 20px;
     border-top: 3px #fff solid;
-
 }
 #Menu ul a {
     text-decoration: none;
     color: black;
 }
-#Menu a:visited{color: #3e8cf9;}
-#Menu li:hover {
-    border-top: 3px #3e8cf9 solid;
-}
-#Menu a:hover{
-    color: #3e8cf9;
-}
+#Menu li:hover{border-top: 3px #3e8cf9 solid;}
 
-#Menu ul #inscrire {
-    font-weight: 700;
-    color: #0065FC;
-}
 #Menu ul #inscrire:visited, #Menu ul #inscrire:hover
 {color: #0065FC}
 header h1 {font-size: 1.3em;}
-header p {
-    line-height: 1%;
-}
+header p {line-height: 1%;}
 
-    /* NAV OÙ */
+    /* LIEU */
 
 header #Lieu{
-    width: 100%;
-    height: 50px;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
     margin: 30px 0;
 }
 #Lieu #fondicone{
@@ -89,87 +87,52 @@ header #Lieu{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-#Lieu #fondicone img {
-    width: 45%;
-    margin-top: 25%;
-    }
+#Lieu #fondicone img {width: 50%;}
+
 #Lieu .form-control{
     width: 200px;
     border: 2px #F2F2F2 solid;
     padding-left: 20px;
-    font-weight: 700;
     font-size: 1em;
-
 }
 #Lieu .bouton{
     font-size: 17px;
-    font-weight: 700;
-    background-color: #0065FC;
+    background-color: #3e8cf9;
     color: white;
     padding: 15px 20px;
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#Lieu .fas{
-    display: none;
-}
+#Lieu .fas{display: none;}
+
      /* FILTRES */
 
-#Filtres{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#Filtres p {
-    width: auto;
-    font-weight: 700;
-    margin-right: 20px;
-}
+#Filtres, .filtre{align-items: center;}
+#Filtres p {margin-right: 20px;}
+
 .filtre{
     margin: 0 15px;
     border: 2px #ddd9d9 solid;
     border-radius: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.filtre .fas{
-    color: #0065FC;
 }
 .filtre .rond{
     border-radius: 50%;
     width: 45px;
     height: 45px;
     background-color: #DEEBFF;
-    position: relative;
     left: -6px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
 }
 .filtre a{
     color: black;
-    font-weight: 700;
     padding: 8px 15px 10px 5px;
 }
-.filtre:hover{
-    background-color: #DEEBFF;
-}
-#Info {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    margin: 30px 0;
-    justify-content: flex-start;
-}
+.filtre:hover{background-color: #DEEBFF;}
+
+     /* INFO */
+
+#Info {margin: 30px 0;}
+
 #info{
     color: #0065FC;
     border: 2px #dddd solid;
@@ -177,117 +140,71 @@ header #Lieu{
     height: 25px;
     border-radius: 50%;
     margin: 2px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-#Info i {
-    font-size: 0.8em;
-}
-/* MAIN */
-main{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
+#Info i {font-size: 0.8em;}
+
     /* SECTION 1 */
-#Hebergement {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 0 40px 10px 15px;
-}
+
+#Hebergement {padding: 0 0 10px 15px;}
+
         /* Article Hostingframe */
+
 #Hostingframe {
-    width: 65%;
-    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 20px 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 #Hostingframe h2, #Activites h2, #smallFrame #smallTop h2{
-    margin-left: 20px;
+    padding-left: 20px;
     font-size: 20px;
 }
+        /* LEFT FRAME */
+
 #Hostingframe #locations{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 #locations figure{
     max-width: 220px;
-    width: 100%;
-    height: auto;
     background-color: white;
     border-radius: 15px;
     border: 4px solid white;
-    z-index: 2;
     margin: 15px 10px;
-    overflow: hidden;
 }
 #Hostingframe img {
-    max-width: 300px;
-    width: 100%;
     height: 105px;
-    display: block;
-    z-index: 1;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    object-fit: cover;
 }
 #locations figcaption{
     height: 50px;
-    z-index: 5;
-    position: relative;
-    background-color: white;
     line-height: 1.2%;
-    text-align: left;
     padding-left: 10px;
 }
-#locations figcaption h3 {
-    font-size: 0.9em;
-    font-weight: 800;
-}
+#locations figcaption h3 {font-size: 0.9em;}
 #locations figcaption p{
     font-size: 0.8em;
     padding-top: 5px;
 }
-#Hebergement .fas, #smallFrame figcaption .fas {
-    font-size: 0.7em;
-    color: #0065FC;
-}
-#Hostingframe #plus{
-    margin-left: 20px;
-    font-weight: 700;
-}
-        /* Aside Hostingframe */
+#Hebergement .fas, #smallFrame figcaption .fas {font-size: 0.7em;}
+
+#Hostingframe #plus{padding: 10px 0 0 20px;}
+
+        /* RIGHT FRAME */
+
 #smallFrame {
-    width: 32%;
-    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     padding: 10px 0;
     margin-left: 35px;
 }
 #smallTop {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
 }
 #smallTop h2{
-    margin-left: 35px;
+    margin-left: 25px !IMPORTANT;
     font-size: 0.9em;
     padding-top: 10px;
 }
@@ -297,230 +214,205 @@ main{
     padding-right: 35px;
 }
 #smallFrame figure{
-    width: 80%;
-    height: auto;
     max-width: 340px;
-    max-height: 120px;
-    display: flex;
-    flex-direction: row;
+    height: 130px;
     border-radius: 15px;
     border: 4px solid white;
     overflow: hidden;
-    margin-top: 15px;
+    background-color: white;
 }
 #smallFrame img{
-    max-height: 150px;
-    width: 100%;
     height: 100%;
-    z-index: 1;
-    border-bottom-right-radius: none;
-    border-top-right-radius: none;
-    object-fit: cover;
-    object-position: left;
+    object-position: right;
 }
 #smallFrame figcaption{
     width: 470px;
-    height: 130px;
+    height: 140px;
     background-color: white;
-    position: relative;
-    z-index: 10;
+    right: 20px;
     padding-left: 20px;
     margin: 0;
 }
+#smallFrame :last-child figure img{max-height: 100%;}
+
+#smallFrame :last-child figcaption{height: 140px;}
+
 #smallFrame figcaption h3 {
     font-size: 0.9em;
-    font-weight: 800;
     margin-bottom: 5px;
 }
 #smallFrame figcaption p{
     font-size: 0.8em;
-    padding: 0;
     margin: 0;
 }
 #smallFrame figcaption .fas{
     padding-top: 30px;
     font-size: 0.7em;
 }
-figure{
-    box-shadow: 1px 2px 10px #c9c7c7;
-}
+
     /* SECTION 2 */
+
         /* Article Activities left */
+
 #Activites{
-    width: auto;
-    height: 100%;
     margin: 40px 0;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
+    padding-left: 20px;
 }
 #Activites h2{
     margin: 0;
+    padding: 0;
 }
-#Activites article{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-#activitiesLeft, #activitiesRight{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#activitiesLeft, #activitiesRight{width: 50%;}
 
-}
 #activitiesLeft figure, #activitiesRight figure{
-    width: 100%;
     background-color: white;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#activitiesLeft figure{
-    margin-left: 0;
-}
+#activitiesLeft figure{margin-left: 0;}
+
                 /* port & parc */
+
 #activitiesLeft #port, #activitiesRight #parc{
     width: 50%;
     height: 440px;
     overflow: hidden;
     border-radius: 20px;
-    z-index: 1;
-    display: flex;
 }
 #activitiesLeft #port figcaption, #activitiesRight #parc figcaption{
-    width: 100%;
-    height: auto;
-    padding: 2px 20px;
-    z-index: 10;
+    padding: 2px 0 2px 20px;
     background-color: white;
-    position: relative;
     bottom: 30px;
 }
-#activitiesLeft figcaption h3, #activitiesRight h3{
-    font-size: 14px;
-}
+#activitiesLeft figcaption h3, #activitiesRight h3{font-size: 14px;}
+
 #port img, #parc img{
-    width: auto;
     height: 450px;
-    z-index: 1;
-    object-position: right bottom;
-    object-position: -170px -20px;
+    object-position: -185px 30px;
 }
             /* aside */
-#left1, #right1{
-    flex-direction: column;
-    z-index: 10;
-    width: 50%;
-    margin-top: 0;
-}
+
+#left1, #right1{width: 50%;}
+
 #left1 figure, #right1 figure{
     max-width: 550px;
-    max-height: 100%;
     overflow: hidden;
 }
-
                 /* fort */
+
 #left1 #fort, #left1 #iles{
-    width: 100%;
-    height: auto;
     max-height: 240px;
-    overflow: hidden;
     border-radius: 20px;
     margin-bottom: 40px;
     margin-right: 0;
 }
 #left1 #fort img{
-    width: 100%;
     height: 230px;
-    object-fit: cover;
     object-position: 100% 40%;
-
 }
-#fort figcaption{
-    width: 100%;
-    height: auto;
+#fort figcaption, #iles figcaption{
     padding: 2px 20px;
-    z-index: 10;
     background-color: white;
-    position: relative;
     bottom: 25px;
 }
                 /* iles */
-#left1 #iles{
-    max-height: 160px;
-}
+
+#left1 #iles{max-height: 160px;}
+
 #left1 #iles img{
-    width: 100%;
     height: 160px;
-    object-fit: cover;
-    object-position: 100% -65%;
-}
-#iles figcaption{
-    position: relative;
-    bottom: 25px;
-    padding: 2px 20px;
-    z-index: 10;
-    background-color: white;
+    object-position: 100% -32%;
 }
 
         /* Activities right */
+
             /* Aside right */
 
 #right1 figure{
-    width: 100%;
     max-height: 200px;
-    overflow: hidden;
     border-radius: 20px;
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-left: 0;
 }
 #right1 img{
-    width: 100%;
     height: 250px;
-    object-fit: scale-down;
-    object-position: center top;
-    object-position: 0px 50px;
+    object-position: 0px 30px;
 }
 #right1 figcaption{
-    max-height: 50px;
-    position: relative;
     bottom: 50px;
     padding: 3px 20px;
-    z-index: 10;
     background-color: white;
 }
 
 /* FOOTER */
 
 footer{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
     background-color: #f2f2f2;
-    justify-content: flex-start;
     padding: 20px 20px;
 }
-.link{
-    width: 32%;
-}
+.link{width: 32%;}
+
 footer h4{
     margin-left: 40px;
     margin-bottom: 0;
 }
 footer ul{
     margin-top: 10px;
+    padding-left: 40px;
 }
-footer a{
-    color: black;
-    font-size: 0.8em;
-}
+footer a{font-size: 0.8em;}
 
-     /*------------------ RESPONSIVE ------------------*/
+     /*------------ RESPONSIVE TABLET ------------*/
+
+@media screen and (min-width: 501px) and (max-width: 1300px)
+{
+    #Menu #topright{
+        width: 30%;
+        justify-content: space-between;
+    }
+    main p, footer a{font-size: 14px !IMPORTANT;}
+    #smallFrame{
+        width: 60%;
+        padding: 10px 40px;
+        align-items: center;
+    }
+    #smallTop{width: 130%;}
+    
+    #smallFrame figure{
+        width: 100%;
+        height: 200px;
+        max-height: 70%;
+        max-width: 100%;
+        background-color: white;
+    }
+    #smallFrame figure img{object-position: center;}
+    
+    #smallFrame figcaption{
+        width: 150%;
+        height: auto;
+        background-color: white;
+        z-index: 10;
+        padding-left: 5px;
+        left: 0;
+    }
+    #smallFrame figcaption .fas{
+        padding-top: 20px;
+        font-size: 0.7em;
+    }
+    #activitiesLeft figcaption h3, #activitiesRight figcaption h3, #plus {font-size: 16px !IMPORTANT;}
+    
+    #activitiesRight #parc figcaption{bottom: 27px;}
+    
+    #right1 img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center top;
+        object-position: 50% 40%;
+    }
+}
+     /*------------ RESPONSIVE MOBILE ------------*/
+
 
 @media all and (max-width: 500px)
 {
@@ -531,13 +423,17 @@ footer a{
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0 auto;
-            }
+        justify-content: center;
+    }
     /* HEADER */
     
     header{
         width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
+            /* MENU */
+    
     #Menu{
         align-items: center;
         margin-top: 10px;
@@ -560,47 +456,43 @@ footer a{
         flex-direction: column-reverse;
         justify-content: space-between;
         border-bottom: 3px #F2F2F2 solid;
+        padding: 0;
     }
     #Menu li, #Menu li:hover{
         border-top: none;
         padding-bottom: 10px;
     }
-    #Menu #topleft a, #Menu #topright a{
-        color: #3e8cf9;
-    }
-    #topright #act a{
-        color: black;
-    }
+    #Menu #topleft a, #Menu #topright a{color: #3e8cf9;}
+    
+    #topright #act a{color: black;}
+    
     #Menu #inscrire {
         text-align: right;
         padding-left: 35%;
     }
     header h1 {
         margin-top: 20px;
-        font-size: 1.4em;
-    }
-    header h1, header p, #Lieu, #Filtres{
-        margin-left: 20px;
+        font-size: 1.3em;
     }
     header p{
         height: auto;
         margin-bottom: 30px;
         line-height: normal;
     }
-    /* NAV OÙ */
+            /* LIEU */
     #Lieu{
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin: 30px 10px !IMPORTANT;
     }
     #Lieu .form-control{
         width: 63%;
         border-right: none;
     }
-    #Lieu .bouton{
-        display: none;
-    }
+    #Lieu .bouton{display: none;}
+    
     #Lieu :nth-child(3n){
         width: 50px;
         height: 50px;
@@ -615,7 +507,7 @@ footer a{
         color: white;
         font-size: 1.2em;
 }
-    /* FILTRES */
+            /* FILTRES */
     #Filtres{
         width: 100%;
         display: flex;
@@ -628,26 +520,22 @@ footer a{
         margin: 0 0 10px 10px;
         font-size: 18px;
     }
-    #Filtres :nth-child(4n){
-        margin-right: 90px;
-    }
-    .filtre{
-        margin: 6px 8px;
-    }
+    #Filtres :nth-child(4n){margin-right: 90px;}
+    
+    .filtre{margin: 6px 8px;}
+    
     .filtre .rond{
         width: 50px;
         height: 50px;
     }
-    .filtre .fas {
-        font-size: 1.2em;
-    }
+    .filtre .fas {font-size: 1.2em;}
+    
             /* INFO */
+    
     header #Info{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
         align-items: baseline;
-        margin: 10px 0;
+        margin: 10px;
     }
     #Info #info{
         width: 30px;
@@ -664,44 +552,42 @@ footer a{
     #Hebergement{
         width: 100%;
         flex-direction: column-reverse;
-        margin: 0;
-        padding: 0;
+        margin: 0 auto;
+        padding: 0 10px;
     }
-    #locations figure{
-        margin: 5px 0;
-    }
-    #Hebergement h2{
-        margin-left: 10px;
-    }
-    #Hebergement h2, #smallFrame #smallTop h2, #Activites h2{
-        font-size: 1.4em;   
-    }
+    #locations figure{margin: 5px 0;}
+    
+    #Hebergement h2{margin-left: 10px;}
+    
+    #Hebergement h2, #smallFrame #smallTop h2, #Activites h2{font-size: 1.2em;}
+    
+    /* LES PLUS POPULAIRES */
+    
     #smallFrame{
-        width: 100%;
-        max-width: 100%;
         margin: 0;
         border-radius: 0;
+        align-items: center;
     }
-    #smallTop h2{
-        padding-left: 20px;
-    }
+    #smallTop h2{padding-left: 20px;}
+    
     #smallTop .fas{
         font-size: 20px;
         padding-right: 45px;
     }
     #smallFrame figure{
         width: 90%;
-        height: 200px;
         max-height: 150px;
-        max-width: 100%;
     }
+    #smallFrame img{object-position: center;}
+    
     #smallFrame figcaption{
-        width: 160%;
+        width: 240%;
         height: auto;
     }
-    #smallFrame figcaption .fas{
-        padding-top: 50px;
-    }
+    #smallFrame figcaption .fas{padding-top: 30px;}
+    
+    /* HEBERGEMENTS */
+    
     #Hostingframe{
         width: auto;
         background-color: white;
@@ -720,22 +606,21 @@ footer a{
         object-position: center top;
         object-position: 50% 52%;
     }
-    #Hostingframe figure figcaption{
-        height: 30px;
-    }
+    #Hostingframe figure figcaption{height: 30px;}
+    
     #Hostingframe figure figcaption h3, #smallFrame figure figcaption h3, #plus{
         font-size: 17px;
         padding-top: 0;
     }
-    #Hostingframe figure figcaption p, #smallFrame figure figcaption p{
-        font-size: 14px;
-    }
-    #Hostingframe #plus{
-        margin-left: 5px;
-    }
+    #Hostingframe figure figcaption p, #smallFrame figure figcaption p{font-size: 14px;}
+    
+    #Hostingframe #plus{margin-left: 5px;}
+    
     /* Section 2 */
+
     #Activites{
         margin: 0 auto;
+        padding: 0 0 0 15px;
     }
     #Activites article{
         width: 100%;
@@ -770,18 +655,14 @@ footer a{
         object-fit: cover;
         object-position: center;
     }
-    #activitiesLeft #port img{
-        object-position: 50% 15%;
-    }
-    #activitiesLeft #fort img{
-        object-position: 50% 15%;
-    }
-    #activitiesLeft figcaption h3, #activitiesRight figcaption h3{
-        font-size: 17px;
-    }
-    #activitiesLeft #left1 #iles img{
-        object-position: 100% 5%;
-    }
+    #activitiesLeft #port img{object-position: 50% 15%;}
+    
+    #activitiesLeft #fort img{object-position: 50% 15%;}
+    
+    #activitiesLeft figcaption h3, #activitiesRight figcaption h3{font-size: 17px;}
+    
+    #activitiesLeft #left1 #iles img{object-position: 100% 5%;}
+    
     #activitiesLeft #port figcaption, #activitiesLeft #fort figcaption, #activitiesLeft #iles figcaption, #activitiesRight #parc figcaption{
         bottom: 20px;
         height: 40px;
@@ -790,23 +671,19 @@ footer a{
         object-position: center bottom;
         object-position:  50% 20%;
     }
-    #activitiesRight #parc figcaption{
-        bottom: 25px;
-    }
-    #activitiesRight #right1 figure img{
-        object-position: 50% 7%;
-    }
-    #activitiesRight #right1 figure #Longchamp{
-        object-position: 50% 25%;
-    }
-    #activitiesRight #right1 figure figcaption{
-        bottom: 20px;
-    }
-    /* Footer */
+    #activitiesRight #parc figcaption{bottom: 25px;}
+    
+    #activitiesRight #right1 figure img{object-position: 50% 7%;}
+    
+    #activitiesRight #right1 figure #Longchamp{object-position: 50% 25%;}
+    
+    #activitiesRight #right1 figure figcaption{bottom: 20px;}
+    
+    /* FOOTER */
     
     footer{
         width: 100%;
-        margin: 0;
+        margin: 0 0 0 10px;
         padding: 20px 0;
         flex-direction: column;
     }
@@ -814,13 +691,9 @@ footer a{
         width: 100%;
         height: auto;
     }
-    footer .link h4{
-        font-size: 17px;
-    }
-    footer .link li{
-        margin: 15px 0;
-    }
-    footer .link a{
-        font-size: 1em;
-    }
+    footer .link h4{font-size: 17px;}
+    
+    footer .link li{margin: 15px 0;}
+    
+    footer .link a{font-size: 1em;}
 }
