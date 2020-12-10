@@ -50,10 +50,12 @@ header{padding-left: 20px;}
     width: 82%;
     justify-content: space-between;
 }
-header #logo {
-    height: 45px;
-    padding-top: 1%;
-} 
+header #logo {height: 45px;} 
+#topleft :first-child {
+    margin: 0;
+    padding-left: 0;
+    border-top: none !IMPORTANT;
+}
 #Menu #topright{
     width: 16.5%;
     padding-right: 4%;
@@ -167,7 +169,7 @@ header #Lieu{
     justify-content: space-around;
 }
 #locations figure{
-    max-width: 220px;
+    width: 200px;
     background-color: white;
     border-radius: 15px;
     border: 4px solid white;
