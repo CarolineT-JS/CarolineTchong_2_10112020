@@ -635,7 +635,9 @@ footer a{
         margin: 0;
         border-radius: 0;
     }
-    #smallTop h2{padding-left: 20px;}
+    #smallTop{width: 113%;}
+    
+    #smallTop h2{padding-left:10px;}
     
     #smallTop .fas{
         font-size: 20px;
