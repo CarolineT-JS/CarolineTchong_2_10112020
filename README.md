@@ -1,2 +1,2 @@
-# OpenClassroomProject
-Cours sur GitHub
+# OpenClassroom - DW - Projet 2
+Transformez une maquette en site web
