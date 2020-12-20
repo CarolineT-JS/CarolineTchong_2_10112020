@@ -426,6 +426,10 @@ footer a{
 
 @media screen and (min-width: 501px) and (max-width: 1300px)
 {
+    header{
+        margin: 0 auto;
+        width: 90%;
+    }
     #Menu #topright{
         width: 30%;
         justify-content: space-between;
@@ -435,6 +439,8 @@ footer a{
     .filtre{margin: 10px;}
     
     main p, footer a{font-size: 14px !IMPORTANT;}
+    
+    #Hebergement{padding: 0;}
     
     #smallFrame{
         width: 40%;
@@ -461,9 +467,11 @@ footer a{
         left: 0;
     }
     #smallFrame figcaption .fas{
-        padding-top: 20px;
+        padding-top: 40px;
         font-size: 0.7em;
     }
+    #Activites{width: 90%;}
+
     #Activites article{flex-direction: column;}
     
     #Activites #activitiesLeft, #Activites  #activitiesRight{width: 100%;}
@@ -481,6 +489,7 @@ footer a{
         object-position: center top;
         object-position: 50% 40%;
     }
+    footer{padding: 20px 0;}
 }
 
      /*------------ RESPONSIVE MOBILE 500px ------------*/
