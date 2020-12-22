@@ -63,6 +63,9 @@ header{
     justify-content: space-between;
     padding-right: 4%;
 }
+#Menu #act a{
+    color: black;
+}
 #Menu #topleft #logo {
     width: auto;
     height: 45px;
